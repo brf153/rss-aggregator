@@ -12,6 +12,10 @@ import (
 	"github.com/go-chi/cors"
 )
 
+type apiConfig struct {
+	DB *database.Queries
+}
+
 func main() {
 	fmt.Println("Hello World!")
 
@@ -21,6 +25,12 @@ func main() {
 	if portString == "" {
 		log.Fatal("Port is not found in the environment")
 	}
+
+	dbURL := os.Getenv("DB_URL")
+	if dbURL == "" {
+		log.Fatal("DB_URL is not found in the environment")
+	}
+
 	router := chi.NewRouter()
 
 	router.Use(cors.Handler(cors.Options{
