@@ -4,14 +4,15 @@ import (
 	"time"
 
 	"github.com/brf153/rss-aggregator/internal/database"
-	// "github.com/google/uuid"
+	"github.com/google/uuid"
 )
 
 type User struct {
-	ID        int32     `json:"id"`
+	ID        uuid.UUID `json:"id"`
 	CreatedAt time.Time `json:"created_id"`
 	UpdatedAt time.Time `json:"updated_id"`
 	Name      string    `json:"name"`
+	APIKey    string    `json:"api_key"`
 }
 
 func databaseUsertoUser(dbUser database.User) User {
@@ -20,5 +21,6 @@ func databaseUsertoUser(dbUser database.User) User {
 		CreatedAt: dbUser.CreatedAt,
 		UpdatedAt: dbUser.UpdatedAt,
 		Name:      dbUser.Name,
+		APIKey:    dbUser.ApiKey,
 	}
 }
