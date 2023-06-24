@@ -14,7 +14,7 @@ To run this project locally, ensure you have the following prerequisites install
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/rss-aggregator.git
+   git clone https://github.com/brf153/rss-aggregator.git
 
 2. Make a .env file and make a variable named PORT. Give a random number to the port variable.
 
@@ -36,4 +36,4 @@ To run this project locally, ensure you have the following prerequisites install
 
 ## Contact
 
-  You can connect with me on **Twitter** <span style="color:blue;">https://twitter.com/ThisIsBhandari</span> or on **LinkedIn** <span style="color:blue;">https://www.linkedin.com/in/devaansh-bhandari/</span>
+  You can connect with me on **Twitter**--><span style="color:blue;">https://twitter.com/ThisIsBhandari</span> or on **LinkedIn**--><span style="color:blue;">https://www.linkedin.com/in/devaansh-bhandari/</span>
