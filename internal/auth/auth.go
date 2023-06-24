@@ -19,7 +19,7 @@ func GetAPIKey(headers http.Header) (string, error) {
 	if len(vals) != 2 {
 		return "", errors.New("malformed auth header")
 	}
-	if vals[0] != "APIKey" {
+	if vals[0] != "ApiKey" {
 		return "", errors.New("malformed first part of auth header")
 	}
 	return vals[1], nil
