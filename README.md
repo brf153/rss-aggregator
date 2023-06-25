@@ -25,8 +25,8 @@ To run this project locally, ensure you have the following prerequisites install
 
 4. Build and run the application:
 
-   cd rss-aggregator
-   go build
+   cd rss-aggregator \n
+   go build \n
    ./rss-aggregator
 
 ## Contributing
